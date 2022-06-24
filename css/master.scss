@@ -1,0 +1,854 @@
+$numForBorder:1;
+@if($numForBorder==0){
+    .borderTest{
+        border: 1px solid red;
+    }
+}
+@if($numForBorder==1){
+    .borderTest{
+        border: none;
+    }
+}
+
+$numForBgc:1;
+@if($numForBgc==0){
+    .backgroudTest{
+        background-color: blue;
+    }
+}
+@if($numForBgc==1){
+    .backgroudTest{
+        background-color: none;
+    }
+}
+
+$bgcColor:#f7f4f0;
+$writtenColor:#1e1e2f;
+$buttonColor:#97c77f;
+
+.df{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.transition{
+    transition: 0.4s;
+}
+
+main{
+    width: 100%;
+    background-color: $bgcColor;
+
+    
+    // start header
+    >header{
+        width: 100%;
+        height: 100px;
+        @extend .borderTest;
+        
+        // start logo
+        >section:nth-of-type(1){
+            width: 20%;
+            height: 100%;
+            @extend .borderTest;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        // end logo
+
+        // start menu
+        >nav{
+            @extend .borderTest;
+            width: 58%;
+            height: 100%;
+            >ul{
+                display: flex;
+                @extend .borderTest;
+                >li{
+                    display: flex;
+                    padding: 0 15px;
+                    position: relative;
+                    >a{
+                        @extend .df;
+                        @extend .borderTest;
+                        @extend .backgroudTest;
+                        padding: 0 7px;
+                        justify-content: center;
+                        position: relative;
+                        text-transform: capitalize;
+                        @extend .transition;   
+                        >div{
+                            font-size: 12px;
+                            padding-left: 5px;
+                        }                       
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            width: 0;
+                            height: 2px;
+                            background-color: $buttonColor;
+                            bottom: 30px;
+                            left: 0;
+                            @extend .transition;
+                        }
+                        &:hover{
+                            color: $buttonColor;
+                        }
+                        &:hover::after{
+                            width: 100%;
+                        }
+                        &:hover>div{
+                            transform: perspective(800px) rotateX(180deg);
+                        }    
+                    }
+                &:nth-of-type(2):hover>ul{
+                    opacity: 1;
+                    visibility: visible;
+                    top: 95px;
+                }
+                    >ul{
+                        opacity: 0;
+                        visibility: hidden;
+                        @extend .transition;
+                        width: 130%;
+                        @extend .borderTest;
+                        position: absolute;
+                        top: 120px;
+                        left: 10px;
+                        margin-bottom: 10px;
+                        z-index: 3;
+                        background-color:$writtenColor;
+                        >li{
+                            @extend .borderTest; 
+                            @extend .df;
+                            >a{
+                                @extend .df;
+                                width: 100%;
+                                height: 100%;
+                                text-indent: 10px;
+                                padding: 20px 0;
+                                @extend .backgroudTest;  
+                                text-transform: capitalize;
+                                color: $bgcColor;
+                                @extend .transition;
+                                &:hover{
+                                    background-color: $buttonColor;
+                                    color: $bgcColor;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+        // end menu
+
+        // start buttons
+        >section:nth-of-type(2){
+            width: 22%;
+            height: 100%;
+            @extend .borderTest;
+            @extend .df;
+            justify-content: flex-start;
+            >a{
+                text-transform: capitalize;
+                margin: 0 10px;
+                padding: 0 10px;
+                @extend .transition;
+                @extend .df;
+                justify-content: center;
+
+                
+                &:nth-of-type(1){ 
+                    color: $writtenColor; 
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        width: 0;
+                        height: 2px;
+                        background-color: $buttonColor;
+                        top: 30px;
+                        left: 0;
+                        @extend .transition;     
+                    }
+                    &:hover{
+                        color:$buttonColor;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                    }  
+                }
+                // end first button
+
+                // start second button
+                &:nth-of-type(2){
+                    background-color:$writtenColor;
+                    color: $bgcColor;
+                    border-radius: 50px;
+                    width: 160px;
+                    height: 40px;
+                    &:hover{
+                        background-color:$buttonColor;
+                        color: $writtenColor;
+                    }
+                }
+
+            }
+
+        
+        }
+        // end buttons  
+    }
+    // end header
+
+    
+    // srart gallery
+    .gallery{
+        width: 100%;
+        height: 650px;
+        @extend .borderTest;
+        
+        // start slogan
+       >section:nth-of-type(1){
+        width: 30%;
+        height: 100%;
+        @extend .borderTest;
+        @extend .df;
+        align-content: center;
+            >section:nth-of-type(1){
+                width: 90%;
+                height: 50%;
+                @extend .borderTest;
+                display: flex;
+                align-content: flex-start;
+                >strong{
+                    width: 100%;
+                    text-transform: capitalize;
+                    color: $writtenColor;
+                    font-size: 4rem;
+                    @extend .borderTest;
+                    display: flex;
+                    text-indent: 75px;
+                }
+        }
+            >section:nth-of-type(2){
+                width: 100%;
+                height: 30%;
+                @extend .borderTest;
+                display: flex;
+                justify-content: center;
+                padding-left: 75px;
+                >form{
+                    width: 100%;
+                    height: 120px;
+                    border: none;
+                    position: relative;
+                    >label{
+                        position: absolute;
+                        width: 120px;
+                        height: 120px;
+                        bottom: 0;
+                        right: -120px;
+                        background-color:$buttonColor;
+                        @extend .df;
+                        @extend .transition;
+                        justify-content: center;
+                        text-transform: capitalize;
+                        color: $writtenColor;
+                        font-size: 2rem;
+                        font-weight: bold;
+                        cursor: pointer;
+                        z-index: 2;
+                        &:hover{
+                            background-color: #ecc196;
+                        }
+                    }
+                    >input{
+                        text-transform: capitalize;
+                        color: $writtenColor;
+                        font-family: archia;
+                        font-size: 20px;
+                        padding-left: 15px;
+                        @extend .df;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                    }
+                }
+                >form>input[type=submit]{
+                    display: none;
+                }
+        }  
+    }
+    // end slogan
+
+
+    // start photos
+    >section:nth-of-type(2){
+        width: 70%;
+        height: 100%;
+        @extend .borderTest;
+        @extend .df;
+        justify-content: center;
+        flex-direction: row;
+        >div{
+            width: 95%;
+            height: 80%;
+            @extend .borderTest;
+            display: flex;
+            justify-content: flex-end;
+            >figure{
+                @extend .borderTest;
+                margin: 0 30px;
+                width: 150px;
+                height: 100%;
+                @extend .transition;
+                border-radius: 10px;
+                flex-grow: 1;
+                display: flex;
+                flex-wrap: nowrap;
+                position: relative;
+                overflow: hidden;
+                @extend .transition;
+                >img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            &:hover{
+                flex-grow: 10;
+            }    
+            }    
+        }
+    }
+    // end photos
+
+
+    }
+    // end gallery
+
+
+    // start slider1
+        .slider1{
+            width: 100%;
+            display: flex;
+            align-content: flex-start;
+            >*{
+                @extend .borderTest;  
+            }
+            >h2{
+                color: $writtenColor;
+                text-transform: capitalize;
+                font-size: 2.5rem;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100px; 
+            }
+            >aside{
+                height: 70px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                >ul{
+                    @extend .borderTest; 
+                    @extend .df;
+                    >li{
+                        display: flex;
+                        padding: 0 10px; 
+                        >a{
+                            @extend .borderTest;
+                            text-transform: capitalize;
+                            color: $writtenColor;
+                            position: relative;
+                            &::before{
+                                width: 100%;
+                                height: 2px;
+                                content: '';
+                                position: absolute;
+                                background-color:$writtenColor;
+                                bottom: -10px;
+                                left: 0;
+                                @extend .transition;
+                                opacity: 0;
+                                visibility: hidden;  
+                            }
+                            &:hover::before{
+                                bottom: -2px;
+                                opacity: 1;
+                                visibility: visible;
+                            } 
+                        }
+                    }
+                    
+                }
+            }
+            >section{
+                width: 100%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center; 
+                >figure{
+                    width: 300px;
+                    @extend .borderTest; 
+                    border-radius: 10px;
+                    margin: 0 10px;
+                    position: relative;
+                    >span{
+                        position: absolute;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color:$bgcColor;
+                        @extend .df;
+                        justify-content: center;
+                        color: #1e1e2f;
+                        top: -30px;
+                        right: 10px; 
+                        opacity: 0;
+                        visibility: hidden;
+                        @extend .transition;
+                    }
+                    &:hover>span{
+                        top: 10px;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    >img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
+                    >figcaption{
+                        @extend .borderTest; 
+                        width: 100%;
+                        display: flex;
+                        align-content: flex-start;
+                        >*{
+                            text-transform: capitalize;
+                            color: $writtenColor;
+                            width: 100%;
+                            padding-top: 10px;
+                        }
+                        >h2{
+                            cursor: pointer;
+                            @extend .transition;
+                        } 
+                    }
+                    &:hover>figcaption>h2{
+                        color: $buttonColor;
+                    }
+                }
+                >figure:nth-of-type(1){
+                    height: 300px;
+                }
+                >figure:nth-of-type(2){
+                    height: 330px;
+                }
+                >figure:nth-of-type(3){
+                    height: 400px;
+                }
+                >figure:nth-of-type(4){
+                    height: 300px;
+                }
+            }
+        }
+    // end slider1
+
+    // start info section
+    .infoSection{
+        width: 100%;
+        height: 650px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        @extend .borderTest;
+        .introInfo{
+            width: 100%;
+            height: 200px;
+            @extend .borderTest;
+            >*{
+                @extend .borderTest;
+                width: 50%;
+                height: 100%;
+                color: $writtenColor;
+                @extend .df;
+                
+            }
+            >section:nth-of-type(1){
+                @extend .df;
+                >h2{
+                    padding-left: 80px;
+                    width: 70%;
+                    font-size: 2.5rem;
+                    @extend .borderTest; 
+                }   
+            }
+            >section:nth-of-type(2){
+                display: flex;
+                align-items: flex-start;
+                padding-top: 30px;
+                position: relative;
+                >p{
+                    font-size: 1.2rem;
+                    @extend .borderTest;
+                    width: 80%;
+                    padding-right: 80px;
+
+                }
+                >section{
+                    width: 500px;
+                    height: 125px;
+                    background-color: $buttonColor;
+                    border-radius: 2px;
+                    position: absolute;
+                    z-index: 2;
+                    bottom: -40px;
+                    @extend .df;
+                    justify-content: center;
+                    >section{
+                        width: 400px;
+                        height: 60px;
+                        @extend .borderTest;
+                        color: $writtenColor;
+                        >section{
+                            width: 50%;
+                            height: 100%;
+                            color: $writtenColor;
+                            @extend .borderTest;
+                            border-right: 1px solid $writtenColor;
+                            color: $writtenColor;
+                            @extend .df;
+                            justify-content: center;
+                            
+                            >section:nth-of-type(1){
+                                width: 30%;
+                                height: 100%;
+                                font-size: 3rem;
+                                @extend .borderTest;
+                                @extend .df;
+                            }
+                            >section:nth-of-type(2){
+                                width: 50%;
+                                text-transform: uppercase;
+                                font-weight: bold;
+                                font-size: 13px;
+                                @extend .borderTest;
+                                @extend .df;
+                                margin-left: 5px;
+                                
+                            }
+                        }
+                        >section:nth-of-type(2){
+                            border-right: none;
+                            justify-content: flex-end;
+                            
+                        }
+                    }
+                }
+            } 
+        }
+
+        .secondInfo{
+            width: 100%;
+            height: 450px;
+            @extend .borderTest;
+            >section:nth-of-type(1){
+                width: 25%;
+                height: 100%;
+                @extend .borderTest;
+                display: flex;
+                align-content: center;
+                >section{
+                    @extend .borderTest;
+                    width: 100%;
+                    height: 25%;
+                    padding-left: 80px;
+                    >section:nth-of-type(1){
+                        width: 20%;
+                        height: 100%;
+                        @extend .borderTest;
+                        display: flex;
+                        justify-content: center;
+                        >span{
+                            width: 55px;
+                            height: 55px;
+                            border-radius: 50%;
+                            background-color: #fff;
+                            @extend .df;
+                            justify-content: center;
+                            font-size: 20px;
+                            color: #bf8d5b;
+                        }
+                    }
+                    >section:nth-of-type(2){
+                        width: 70%;
+                        height: 100%;
+                        @extend .borderTest;
+                        display: flex;
+                        align-content: flex-start;
+                        color: $writtenColor;
+                        margin-left: 20px;
+                        >h3{
+                            padding-bottom: 10px;
+                        }
+                        h5{
+                            color: #61606a;
+                            font-size: 15px;
+                        }
+                    }
+ 
+                }
+                >section:nth-of-type(2){
+                    >section:nth-of-type(1){
+                        >span{
+                            color: #6b759d;
+                        }
+                    }
+                }
+                >section:nth-of-type(3){
+                    >section:nth-of-type(1){
+                        >span{
+                            color: #a969a8;
+                        }
+                    }
+                }
+            }
+            >section:nth-of-type(2){
+                width: 75%;
+                height: 100%;
+                @extend .borderTest;
+                >video{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    
+                }
+            }
+        }   
+    }
+    // end info section
+
+    // start comment 
+    .comment{
+        width: 100%;
+        @extend .borderTest;
+        >section:nth-of-type(1){
+            width: 100%;
+            @extend .df;
+            justify-content: center;
+            @extend .borderTest;
+            >h2{
+                text-transform: capitalize;
+                color: $writtenColor;
+                font-size: 2.5rem;
+            }
+        }
+        >section:nth-of-type(2){
+            width: 100%;
+            @extend .df;
+            justify-content: center;
+            margin: 50px 0;
+            >div{
+                background-color: #fff;
+                width: 290px;
+                border-radius: 10px;
+                margin: 0 17px;
+                padding: 20px;
+                @extend .transition;
+                box-shadow: 2px 2px 7px gray;
+                >p{
+                    width: 100%;
+                    @extend .borderTest;
+                    @extend .df;
+                    margin-bottom: 30px;
+                }
+                >section{
+                    width: 100%;
+                    @extend .borderTest;
+                    @extend .df;
+                    >figure{
+                        width: 50px;
+                        height: 50px;
+                        @extend .borderTest;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+                    }
+                    >section{
+                        width: 60%;
+                        @extend .borderTest;
+                        margin-left: 10px;
+                        >span:nth-of-type(1){
+                            @extend .borderTest;
+                            text-transform: capitalize;
+                            color:$writtenColor ;
+                            font-weight: bold;
+                            margin-bottom: 8px;
+                        }
+                        >span:nth-of-type(2){
+                            @extend .borderTest;
+                            text-transform: uppercase;
+                            width: 70%;
+                            color: $buttonColor;
+                            font-size: 12px;
+                        }
+                    }
+
+                }
+            &:hover{
+                box-shadow: 10px 10px 20px gray;
+            }
+
+            }
+        }
+    }
+    // end comment
+
+    // start footer
+        .footer{
+            width: 100%;
+            @extend .borderTest;
+            min-height: 200px;
+            margin: 50px 0;
+            >section:nth-of-type(1){
+                width: 100%;
+                @extend .borderTest;
+                >div:nth-of-type(1),div:nth-of-type(4){
+                    width: 40%;
+                    @extend .borderTest; 
+                }
+
+                >div:nth-of-type(1){
+                    padding-left: 86px;
+                }
+                >div:nth-of-type(4){
+                    display: flex;
+                    justify-content: center;
+                    section{
+                        width: 80%;
+                        height: 80%;
+                        @extend .borderTest; 
+                        display: flex;
+                        justify-items: flex-end;
+                        padding-top: 7px;
+                        display: flex;
+                        justify-content: center;
+                        >h2{
+                            text-transform: capitalize;
+                            color: $writtenColor;
+                            font-size: 1.5rem;
+                            margin-bottom: 15px;
+                        }
+                        >form{
+                            width: 250px;
+                            height: 60px;
+                            border: none;
+                            position: relative;
+                            >input[type=submit]{
+                                display: none;
+                            }
+                            >input{
+                                text-transform: capitalize;
+                                color: $writtenColor;
+                                font-family: archia;
+                                font-size: 12px;
+                                padding-left: 15px;
+                                @extend .df;
+                                justify-content: center;
+                                width: 100%;
+                                height: 100%;
+                                border: none;
+                            }
+                            >label{
+                                position: absolute;
+                                width: 60px;
+                                height: 60px;
+                                background-color: $buttonColor;
+                                right: -60px;
+                                bottom: 0;
+                                color:$writtenColor;
+                                @extend .df;
+                                @extend .transition;
+                                justify-content: center;
+                                text-transform: capitalize;
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                                cursor: pointer;
+                                &:hover{
+                                    background-color: #ecc196;
+                                }
+                            }
+                        }
+                    }
+                }
+                >div:nth-of-type(2),div:nth-of-type(3){
+                    width: 10%;
+                    @extend .borderTest;
+                    display: flex;
+                    justify-content: center;
+                    ul{
+                        @extend .borderTest;
+                        >li{
+                            padding-top: 10px;
+                            padding-bottom: 20px;
+                            @extend .borderTest;
+                            display: flex;
+                            justify-content: flex-start;
+                            >a{
+                               
+                                position: relative;
+                                text-transform: capitalize;
+                                @extend .borderTest;
+                                color: $writtenColor;
+                                @extend .transition;
+                                &::after{
+                                    content: '';
+                                    position: absolute;
+                                    display: block;
+                                    width: 0;
+                                    height: 2px;
+                                    background-color: $buttonColor;
+                                    bottom: -3px;
+                                    left: 0;
+                                    @extend .transition;
+                                }
+                                &:hover::after{
+                                    width: 100%;
+                                }
+                                &:hover{
+                                    color: $buttonColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            
+            }
+            >section:nth-of-type(2){
+                margin:  0 auto;
+                width: 85%;
+                @extend .borderTest;
+                border-top: 1px solid #e1dedd;
+                @extend .df;
+                justify-content: center;
+                text-transform: capitalize;
+                color: $writtenColor;
+            }
+        }
+    // end footer
+
+}
+// end main

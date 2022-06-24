@@ -1,0 +1,28 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: archia;
+    src: url(../webFont/archia-regular-webfont.ttf);
+}
+body{
+    font-size: 100%;
+    width: 100%;
+    font-family: archia;
+}
+:root{
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style-type: none;
+}
+section, header, nav, footer, article, aside, figure, figcaption, div, span, main{
+    display: flex;
+    flex-wrap: wrap;
+}

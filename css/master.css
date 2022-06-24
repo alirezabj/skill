@@ -1,0 +1,659 @@
+.borderTest, main .footer > section:nth-of-type(2), main .footer > section:nth-of-type(1) > div:nth-of-type(2) ul > li > a, main .footer > section:nth-of-type(1) div:nth-of-type(3) ul > li > a, main .footer > section:nth-of-type(1) > div:nth-of-type(2) ul > li, main .footer > section:nth-of-type(1) div:nth-of-type(3) ul > li, main .footer > section:nth-of-type(1) > div:nth-of-type(2) ul, main .footer > section:nth-of-type(1) div:nth-of-type(3) ul, main .footer > section:nth-of-type(1) > div:nth-of-type(2), main .footer > section:nth-of-type(1) div:nth-of-type(3), main .footer > section:nth-of-type(1) > div:nth-of-type(4) section, main .footer > section:nth-of-type(1) > div:nth-of-type(1), main .footer > section:nth-of-type(1) div:nth-of-type(4), main .footer > section:nth-of-type(1), main .footer, main .comment > section:nth-of-type(2) > div > section > section > span:nth-of-type(2), main .comment > section:nth-of-type(2) > div > section > section > span:nth-of-type(1), main .comment > section:nth-of-type(2) > div > section > section, main .comment > section:nth-of-type(2) > div > section > figure, main .comment > section:nth-of-type(2) > div > section, main .comment > section:nth-of-type(2) > div > p, main .comment > section:nth-of-type(1), main .comment, main .infoSection .secondInfo > section:nth-of-type(2), main .infoSection .secondInfo > section:nth-of-type(1) > section > section:nth-of-type(2), main .infoSection .secondInfo > section:nth-of-type(1) > section > section:nth-of-type(1), main .infoSection .secondInfo > section:nth-of-type(1) > section, main .infoSection .secondInfo > section:nth-of-type(1), main .infoSection .secondInfo, main .infoSection .introInfo > section:nth-of-type(2) > section > section > section > section:nth-of-type(2), main .infoSection .introInfo > section:nth-of-type(2) > section > section > section > section:nth-of-type(1), main .infoSection .introInfo > section:nth-of-type(2) > section > section > section, main .infoSection .introInfo > section:nth-of-type(2) > section > section, main .infoSection .introInfo > section:nth-of-type(2) > p, main .infoSection .introInfo > section:nth-of-type(1) > h2, main .infoSection .introInfo > *, main .infoSection .introInfo, main .infoSection, main .slider1 > section > figure > figcaption, main .slider1 > section > figure, main .slider1 > aside > ul > li > a, main .slider1 > aside > ul, main .slider1 > *, main .gallery > section:nth-of-type(2) > div > figure, main .gallery > section:nth-of-type(2) > div, main .gallery > section:nth-of-type(2), main .gallery > section:nth-of-type(1) > section:nth-of-type(2), main .gallery > section:nth-of-type(1) > section:nth-of-type(1) > strong, main .gallery > section:nth-of-type(1) > section:nth-of-type(1), main .gallery > section:nth-of-type(1), main .gallery, main > header > section:nth-of-type(2), main > header > nav > ul > li > ul > li, main > header > nav > ul > li > ul, main > header > nav > ul > li > a, main > header > nav > ul, main > header > nav, main > header > section:nth-of-type(1), main > header {
+  border: none;
+}
+
+.backgroudTest, main > header > nav > ul > li > ul > li > a, main > header > nav > ul > li > a {
+  background-color: none;
+}
+
+.df, main .footer > section:nth-of-type(2), main .footer > section:nth-of-type(1) > div:nth-of-type(4) section > form > label, main .footer > section:nth-of-type(1) > div:nth-of-type(4) section > form > input, main .comment > section:nth-of-type(2) > div > section, main .comment > section:nth-of-type(2) > div > p, main .comment > section:nth-of-type(2), main .comment > section:nth-of-type(1), main .infoSection .secondInfo > section:nth-of-type(1) > section > section:nth-of-type(1) > span, main .infoSection .introInfo > section:nth-of-type(2) > section > section > section > section:nth-of-type(2), main .infoSection .introInfo > section:nth-of-type(2) > section > section > section > section:nth-of-type(1), main .infoSection .introInfo > section:nth-of-type(2) > section > section > section, main .infoSection .introInfo > section:nth-of-type(2) > section, main .infoSection .introInfo > section:nth-of-type(1), main .infoSection .introInfo > *, main .slider1 > section > figure > span, main .slider1 > aside > ul, main .gallery > section:nth-of-type(2), main .gallery > section:nth-of-type(1) > section:nth-of-type(2) > form > input, main .gallery > section:nth-of-type(1) > section:nth-of-type(2) > form > label, main .gallery > section:nth-of-type(1), main > header > section:nth-of-type(2) > a, main > header > section:nth-of-type(2), main > header > nav > ul > li > ul > li > a, main > header > nav > ul > li > ul > li, main > header > nav > ul > li > a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.transition, main .footer > section:nth-of-type(1) > div:nth-of-type(2) ul > li > a::after, main .footer > section:nth-of-type(1) div:nth-of-type(3) ul > li > a::after, main .footer > section:nth-of-type(1) > div:nth-of-type(2) ul > li > a, main .footer > section:nth-of-type(1) div:nth-of-type(3) ul > li > a, main .footer > section:nth-of-type(1) > div:nth-of-type(4) section > form > label, main .comment > section:nth-of-type(2) > div, main .slider1 > section > figure > figcaption > h2, main .slider1 > section > figure > span, main .slider1 > aside > ul > li > a::before, main .gallery > section:nth-of-type(2) > div > figure, main .gallery > section:nth-of-type(1) > section:nth-of-type(2) > form > label, main > header > section:nth-of-type(2) > a:nth-of-type(1)::after, main > header > section:nth-of-type(2) > a, main > header > nav > ul > li > ul > li > a, main > header > nav > ul > li > ul, main > header > nav > ul > li > a::after, main > header > nav > ul > li > a {
+  transition: 0.4s;
+}
+
+main {
+  width: 100%;
+  background-color: #f7f4f0;
+}
+main > header {
+  width: 100%;
+  height: 100px;
+}
+main > header > section:nth-of-type(1) {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > header > nav {
+  width: 58%;
+  height: 100%;
+}
+main > header > nav > ul {
+  display: flex;
+}
+main > header > nav > ul > li {
+  display: flex;
+  padding: 0 15px;
+  position: relative;
+}
+main > header > nav > ul > li > a {
+  padding: 0 7px;
+  justify-content: center;
+  position: relative;
+  text-transform: capitalize;
+}
+main > header > nav > ul > li > a > div {
+  font-size: 12px;
+  padding-left: 5px;
+}
+main > header > nav > ul > li > a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #97c77f;
+  bottom: 30px;
+  left: 0;
+}
+main > header > nav > ul > li > a:hover {
+  color: #97c77f;
+}
+main > header > nav > ul > li > a:hover::after {
+  width: 100%;
+}
+main > header > nav > ul > li > a:hover > div {
+  transform: perspective(800px) rotateX(180deg);
+}
+main > header > nav > ul > li:nth-of-type(2):hover > ul {
+  opacity: 1;
+  visibility: visible;
+  top: 95px;
+}
+main > header > nav > ul > li > ul {
+  opacity: 0;
+  visibility: hidden;
+  width: 130%;
+  position: absolute;
+  top: 120px;
+  left: 10px;
+  margin-bottom: 10px;
+  z-index: 3;
+  background-color: #1e1e2f;
+}
+main > header > nav > ul > li > ul > li > a {
+  width: 100%;
+  height: 100%;
+  text-indent: 10px;
+  padding: 20px 0;
+  text-transform: capitalize;
+  color: #f7f4f0;
+}
+main > header > nav > ul > li > ul > li > a:hover {
+  background-color: #97c77f;
+  color: #f7f4f0;
+}
+main > header > section:nth-of-type(2) {
+  width: 22%;
+  height: 100%;
+  justify-content: flex-start;
+}
+main > header > section:nth-of-type(2) > a {
+  text-transform: capitalize;
+  margin: 0 10px;
+  padding: 0 10px;
+  justify-content: center;
+}
+main > header > section:nth-of-type(2) > a:nth-of-type(1) {
+  color: #1e1e2f;
+  position: relative;
+}
+main > header > section:nth-of-type(2) > a:nth-of-type(1)::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #97c77f;
+  top: 30px;
+  left: 0;
+}
+main > header > section:nth-of-type(2) > a:nth-of-type(1):hover {
+  color: #97c77f;
+}
+main > header > section:nth-of-type(2) > a:nth-of-type(1):hover::after {
+  width: 100%;
+}
+main > header > section:nth-of-type(2) > a:nth-of-type(2) {
+  background-color: #1e1e2f;
+  color: #f7f4f0;
+  border-radius: 50px;
+  width: 160px;
+  height: 40px;
+}
+main > header > section:nth-of-type(2) > a:nth-of-type(2):hover {
+  background-color: #97c77f;
+  color: #1e1e2f;
+}
+main .gallery {
+  width: 100%;
+  height: 650px;
+}
+main .gallery > section:nth-of-type(1) {
+  width: 30%;
+  height: 100%;
+  align-content: center;
+}
+main .gallery > section:nth-of-type(1) > section:nth-of-type(1) {
+  width: 90%;
+  height: 50%;
+  display: flex;
+  align-content: flex-start;
+}
+main .gallery > section:nth-of-type(1) > section:nth-of-type(1) > strong {
+  width: 100%;
+  text-transform: capitalize;
+  color: #1e1e2f;
+  font-size: 4rem;
+  display: flex;
+  text-indent: 75px;
+}
+main .gallery > section:nth-of-type(1) > section:nth-of-type(2) {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  padding-left: 75px;
+}
+main .gallery > section:nth-of-type(1) > section:nth-of-type(2) > form {
+  width: 100%;
+  height: 120px;
+  border: none;
+  position: relative;
+}
+main .gallery > section:nth-of-type(1) > section:nth-of-type(2) > form > label {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  bottom: 0;
+  right: -120px;
+  background-color: #97c77f;
+  justify-content: center;
+  text-transform: capitalize;
+  color: #1e1e2f;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2;
+}
+main .gallery > section:nth-of-type(1) > section:nth-of-type(2) > form > label:hover {
+  background-color: #ecc196;
+}
+main .gallery > section:nth-of-type(1) > section:nth-of-type(2) > form > input {
+  text-transform: capitalize;
+  color: #1e1e2f;
+  font-family: archia;
+  font-size: 20px;
+  padding-left: 15px;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+main .gallery > section:nth-of-type(1) > section:nth-of-type(2) > form > input[type=submit] {
+  display: none;
+}
+main .gallery > section:nth-of-type(2) {
+  width: 70%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: row;
+}
+main .gallery > section:nth-of-type(2) > div {
+  width: 95%;
+  height: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+main .gallery > section:nth-of-type(2) > div > figure {
+  margin: 0 30px;
+  width: 150px;
+  height: 100%;
+  border-radius: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+main .gallery > section:nth-of-type(2) > div > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+main .gallery > section:nth-of-type(2) > div > figure:hover {
+  flex-grow: 10;
+}
+main .slider1 {
+  width: 100%;
+  display: flex;
+  align-content: flex-start;
+}
+main .slider1 > h2 {
+  color: #1e1e2f;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+main .slider1 > aside {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .slider1 > aside > ul > li {
+  display: flex;
+  padding: 0 10px;
+}
+main .slider1 > aside > ul > li > a {
+  text-transform: capitalize;
+  color: #1e1e2f;
+  position: relative;
+}
+main .slider1 > aside > ul > li > a::before {
+  width: 100%;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #1e1e2f;
+  bottom: -10px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+main .slider1 > aside > ul > li > a:hover::before {
+  bottom: -2px;
+  opacity: 1;
+  visibility: visible;
+}
+main .slider1 > section {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+main .slider1 > section > figure {
+  width: 300px;
+  border-radius: 10px;
+  margin: 0 10px;
+  position: relative;
+}
+main .slider1 > section > figure > span {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f7f4f0;
+  justify-content: center;
+  color: #1e1e2f;
+  top: -30px;
+  right: 10px;
+  opacity: 0;
+  visibility: hidden;
+}
+main .slider1 > section > figure:hover > span {
+  top: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+main .slider1 > section > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+main .slider1 > section > figure > figcaption {
+  width: 100%;
+  display: flex;
+  align-content: flex-start;
+}
+main .slider1 > section > figure > figcaption > * {
+  text-transform: capitalize;
+  color: #1e1e2f;
+  width: 100%;
+  padding-top: 10px;
+}
+main .slider1 > section > figure > figcaption > h2 {
+  cursor: pointer;
+}
+main .slider1 > section > figure:hover > figcaption > h2 {
+  color: #97c77f;
+}
+main .slider1 > section > figure:nth-of-type(1) {
+  height: 300px;
+}
+main .slider1 > section > figure:nth-of-type(2) {
+  height: 330px;
+}
+main .slider1 > section > figure:nth-of-type(3) {
+  height: 400px;
+}
+main .slider1 > section > figure:nth-of-type(4) {
+  height: 300px;
+}
+main .infoSection {
+  width: 100%;
+  height: 650px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+main .infoSection .introInfo {
+  width: 100%;
+  height: 200px;
+}
+main .infoSection .introInfo > * {
+  width: 50%;
+  height: 100%;
+  color: #1e1e2f;
+}
+main .infoSection .introInfo > section:nth-of-type(1) > h2 {
+  padding-left: 80px;
+  width: 70%;
+  font-size: 2.5rem;
+}
+main .infoSection .introInfo > section:nth-of-type(2) {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 30px;
+  position: relative;
+}
+main .infoSection .introInfo > section:nth-of-type(2) > p {
+  font-size: 1.2rem;
+  width: 80%;
+  padding-right: 80px;
+}
+main .infoSection .introInfo > section:nth-of-type(2) > section {
+  width: 500px;
+  height: 125px;
+  background-color: #97c77f;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 2;
+  bottom: -40px;
+  justify-content: center;
+}
+main .infoSection .introInfo > section:nth-of-type(2) > section > section {
+  width: 400px;
+  height: 60px;
+  color: #1e1e2f;
+}
+main .infoSection .introInfo > section:nth-of-type(2) > section > section > section {
+  width: 50%;
+  height: 100%;
+  color: #1e1e2f;
+  border-right: 1px solid #1e1e2f;
+  color: #1e1e2f;
+  justify-content: center;
+}
+main .infoSection .introInfo > section:nth-of-type(2) > section > section > section > section:nth-of-type(1) {
+  width: 30%;
+  height: 100%;
+  font-size: 3rem;
+}
+main .infoSection .introInfo > section:nth-of-type(2) > section > section > section > section:nth-of-type(2) {
+  width: 50%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 5px;
+}
+main .infoSection .introInfo > section:nth-of-type(2) > section > section > section:nth-of-type(2) {
+  border-right: none;
+  justify-content: flex-end;
+}
+main .infoSection .secondInfo {
+  width: 100%;
+  height: 450px;
+}
+main .infoSection .secondInfo > section:nth-of-type(1) {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+}
+main .infoSection .secondInfo > section:nth-of-type(1) > section {
+  width: 100%;
+  height: 25%;
+  padding-left: 80px;
+}
+main .infoSection .secondInfo > section:nth-of-type(1) > section > section:nth-of-type(1) {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .infoSection .secondInfo > section:nth-of-type(1) > section > section:nth-of-type(1) > span {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #fff;
+  justify-content: center;
+  font-size: 20px;
+  color: #bf8d5b;
+}
+main .infoSection .secondInfo > section:nth-of-type(1) > section > section:nth-of-type(2) {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-content: flex-start;
+  color: #1e1e2f;
+  margin-left: 20px;
+}
+main .infoSection .secondInfo > section:nth-of-type(1) > section > section:nth-of-type(2) > h3 {
+  padding-bottom: 10px;
+}
+main .infoSection .secondInfo > section:nth-of-type(1) > section > section:nth-of-type(2) h5 {
+  color: #61606a;
+  font-size: 15px;
+}
+main .infoSection .secondInfo > section:nth-of-type(1) > section:nth-of-type(2) > section:nth-of-type(1) > span {
+  color: #6b759d;
+}
+main .infoSection .secondInfo > section:nth-of-type(1) > section:nth-of-type(3) > section:nth-of-type(1) > span {
+  color: #a969a8;
+}
+main .infoSection .secondInfo > section:nth-of-type(2) {
+  width: 75%;
+  height: 100%;
+}
+main .infoSection .secondInfo > section:nth-of-type(2) > video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+main .comment {
+  width: 100%;
+}
+main .comment > section:nth-of-type(1) {
+  width: 100%;
+  justify-content: center;
+}
+main .comment > section:nth-of-type(1) > h2 {
+  text-transform: capitalize;
+  color: #1e1e2f;
+  font-size: 2.5rem;
+}
+main .comment > section:nth-of-type(2) {
+  width: 100%;
+  justify-content: center;
+  margin: 50px 0;
+}
+main .comment > section:nth-of-type(2) > div {
+  background-color: #fff;
+  width: 290px;
+  border-radius: 10px;
+  margin: 0 17px;
+  padding: 20px;
+  box-shadow: 2px 2px 7px gray;
+}
+main .comment > section:nth-of-type(2) > div > p {
+  width: 100%;
+  margin-bottom: 30px;
+}
+main .comment > section:nth-of-type(2) > div > section {
+  width: 100%;
+}
+main .comment > section:nth-of-type(2) > div > section > figure {
+  width: 50px;
+  height: 50px;
+}
+main .comment > section:nth-of-type(2) > div > section > figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+main .comment > section:nth-of-type(2) > div > section > section {
+  width: 60%;
+  margin-left: 10px;
+}
+main .comment > section:nth-of-type(2) > div > section > section > span:nth-of-type(1) {
+  text-transform: capitalize;
+  color: #1e1e2f;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+main .comment > section:nth-of-type(2) > div > section > section > span:nth-of-type(2) {
+  text-transform: uppercase;
+  width: 70%;
+  color: #97c77f;
+  font-size: 12px;
+}
+main .comment > section:nth-of-type(2) > div:hover {
+  box-shadow: 10px 10px 20px gray;
+}
+main .footer {
+  width: 100%;
+  min-height: 200px;
+  margin: 50px 0;
+}
+main .footer > section:nth-of-type(1) {
+  width: 100%;
+}
+main .footer > section:nth-of-type(1) > div:nth-of-type(1), main .footer > section:nth-of-type(1) div:nth-of-type(4) {
+  width: 40%;
+}
+main .footer > section:nth-of-type(1) > div:nth-of-type(1) {
+  padding-left: 86px;
+}
+main .footer > section:nth-of-type(1) > div:nth-of-type(4) {
+  display: flex;
+  justify-content: center;
+}
+main .footer > section:nth-of-type(1) > div:nth-of-type(4) section {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-items: flex-end;
+  padding-top: 7px;
+  display: flex;
+  justify-content: center;
+}
+main .footer > section:nth-of-type(1) > div:nth-of-type(4) section > h2 {
+  text-transform: capitalize;
+  color: #1e1e2f;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+main .footer > section:nth-of-type(1) > div:nth-of-type(4) section > form {
+  width: 250px;
+  height: 60px;
+  border: none;
+  position: relative;
+}
+main .footer > section:nth-of-type(1) > div:nth-of-type(4) section > form > input[type=submit] {
+  display: none;
+}
+main .footer > section:nth-of-type(1) > div:nth-of-type(4) section > form > input {
+  text-transform: capitalize;
+  color: #1e1e2f;
+  font-family: archia;
+  font-size: 12px;
+  padding-left: 15px;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+main .footer > section:nth-of-type(1) > div:nth-of-type(4) section > form > label {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #97c77f;
+  right: -60px;
+  bottom: 0;
+  color: #1e1e2f;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+main .footer > section:nth-of-type(1) > div:nth-of-type(4) section > form > label:hover {
+  background-color: #ecc196;
+}
+main .footer > section:nth-of-type(1) > div:nth-of-type(2), main .footer > section:nth-of-type(1) div:nth-of-type(3) {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+main .footer > section:nth-of-type(1) > div:nth-of-type(2) ul > li, main .footer > section:nth-of-type(1) div:nth-of-type(3) ul > li {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+main .footer > section:nth-of-type(1) > div:nth-of-type(2) ul > li > a, main .footer > section:nth-of-type(1) div:nth-of-type(3) ul > li > a {
+  position: relative;
+  text-transform: capitalize;
+  color: #1e1e2f;
+}
+main .footer > section:nth-of-type(1) > div:nth-of-type(2) ul > li > a::after, main .footer > section:nth-of-type(1) div:nth-of-type(3) ul > li > a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #97c77f;
+  bottom: -3px;
+  left: 0;
+}
+main .footer > section:nth-of-type(1) > div:nth-of-type(2) ul > li > a:hover::after, main .footer > section:nth-of-type(1) div:nth-of-type(3) ul > li > a:hover::after {
+  width: 100%;
+}
+main .footer > section:nth-of-type(1) > div:nth-of-type(2) ul > li > a:hover, main .footer > section:nth-of-type(1) div:nth-of-type(3) ul > li > a:hover {
+  color: #97c77f;
+}
+main .footer > section:nth-of-type(2) {
+  margin: 0 auto;
+  width: 85%;
+  border-top: 1px solid #e1dedd;
+  justify-content: center;
+  text-transform: capitalize;
+  color: #1e1e2f;
+}/*# sourceMappingURL=master.css.map */

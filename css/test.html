@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<style>
+body ul {
+  width: 100px;
+}
+body ul li {
+  border: solid red 1px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+body ul li div {
+  transition: 2s;
+}
+body ul li:hover a div {
+  transform: perspective(800PX) rotateX(180deg);
+}
+</style>
+<body>
+    <ul>
+        <li><a href="">hello <div><i class="bi bi-arrow-down-short"></i></div></a></li>
+    </ul>
+</body>
+</html>
